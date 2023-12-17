@@ -1,0 +1,271 @@
+// para cambiar de lugar lo q puedo hcaer es hacer display:grid para cambair posicion cada cosa y que el input me quede abajo
+@media (max-width:365px){
+    .header{
+        width: 360px;
+        height: 95px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        .header-container{
+            width: 360px;
+            height: 40px;
+            gap: 0px;
+            flex-shrink: 0;
+            .header-title{
+                i{
+                    display: block;
+                }
+            }
+            .header-account{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 0px;
+                .acount{
+                    gap: 0px;
+                    img{
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        padding: 12px;
+                        align-items: flex-start;
+                        gap: 12px;
+                        flex-shrink: 0;
+                    }
+                    span{
+                        display: none;
+                    }
+                } 
+                .header-input{
+                    width: 360px;
+                    height: 56px;
+                    flex-shrink: 0;
+                    display: none;
+                    input{
+                        width: 328px;
+                        height: 40px;
+                        flex-shrink: 0;
+                        bottom: 5px;
+                        position: relative;
+                        
+                        right: 55px;
+                    }
+                }
+            }
+        }
+
+        .header-options{
+            ul{
+                display: none;
+                flex-direction: column;
+            }
+            
+        }
+    }
+    .primary{
+        width: 360px;
+        height: 140px;
+        flex-shrink: 0;
+        background: url('/assets/imageResponsive/primaryP.png'), lightgray 50% / cover no-repeat;
+        .pointsImp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 109px;
+            height: 10px;
+            flex-shrink: 0;
+            position: relative;
+            top: 125px;
+            left: 140px;
+        }
+    }
+
+
+    .tendency,
+    .sells{
+        display: flex;
+        width: 696px;
+        height: 360px;
+        padding: 0px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        overflow: hidden;
+        .tendency-container{
+            display: flex;
+            width: 342px;
+            align-items: flex-end;
+            gap: 8px;
+            .card{
+                width: 160px;
+                height: 233px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                .image{
+                    background: url('/assets/imageResponsive/labaropaR.png'), lightgray 50% / cover no-repeat;
+                    width: 99.35px;
+                    height: 99.547px;
+                }
+                p{
+                    width: 112px;
+                    height: 40px;
+                }
+                p,
+                h5{
+                    font-size: 12px;
+                }
+                button{
+                    width: 58px;
+                    height: 16px;
+
+                    font-size: 10px;
+                }
+            }
+        }
+            .move{
+                display: none;
+            }
+    }
+
+        .categories{
+            gap: 14px;
+            h3{
+                width: 304.792px;
+                font-size: 24px;
+                padding: 0px 16px;
+                gap: 10px;
+                position: relative;
+                right: 560px;
+            }
+            .categories-container{
+                display: flex;
+                align-items: flex-start;
+                gap: 0px;
+                .categories-itemsB{
+                    width: 360px;
+                    height: 208px;
+                    h2{
+                        position: relative;
+                        top: 75px;
+                        left:90px;
+                    }
+                }
+                .itemsB1{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background: url('/assets/imageResponsive/futbolR.png'), lightgray 50% / cover no-repeat, #BF2A2F;
+                }
+                .itemsB2{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background: url('/assets/imageResponsive/calzasR.png'), lightgray 50% / cover no-repeat, #BF2A2F;
+                }
+                .categories-itemsA{
+                    width: 360px;
+                    height: 208px;
+                    h2{
+                        position: relative;
+                        top: 75px;
+                        left: 50px;
+                    }
+                }
+                .itemsA1{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background: url('/assets/imageResponsive/zapatillasR.png'), lightgray 50% / cover no-repeat, #BF2A2F;
+                }
+                .itemsA2{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background: url('/assets/imageResponsive/pelotasR.png'), lightgray 50% / cover no-repeat, #BF2A2F;
+                }
+            }
+        }
+
+        .send{
+            width: 360px;
+            padding: 40px 0px;
+            align-items: flex-start;
+            gap: 80px;
+            .send-items{
+                display: flex;
+                width: 360px;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                flex-shrink: 0;
+                .send-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 6px;
+                    h3{
+                        width: 261px;
+                    }
+                    p{
+                        width: 263px;
+                    }
+                }
+            }
+            
+        }
+
+        .pointsCS,
+        .pointsTS,
+        .pointsS{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .pointsS{
+            position: relative;
+            left: 155px;
+            bottom: -20px;
+        }
+        .pointsTS{
+            position: relative;
+            bottom: 10px;
+            left: 110px;
+        }
+
+        .footer{
+            display: grid;
+            width: 360px;
+            text-align: center;
+            height: 681px;
+            .footer-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .info-section{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                .info-bussines{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .info-more{
+                    text-align: center;
+                    width: 290px;
+                    height: 123.791px;
+                    flex-shrink: 0;
+                    .code{
+                        width: 28.254px;
+                        height: 41.048px;
+                        flex-shrink: 0;
+                        background: url('/assets/imageResponsive/codeR.png'), lightgray 50% / cover no-repeat;
+                    }
+                }
+            }
+        }
+
+}
+
+
+

@@ -1,0 +1,74 @@
+.footer{
+    width: 1440px;
+    height: 290px;
+    flex-shrink: 0;
+    background-color: $bg-3;
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2rem;
+        .info,
+        .info-location{
+            color: $light;
+            font-family: $fontFISC;
+            font-weight:400;
+            ul li{
+                padding-top: 10px;
+            }
+            button{
+                width: 194px;
+                height: 40px;
+                flex-shrink: 0;
+                border: 1px solid #FFF;
+                margin:1rem 0 1rem;
+                background-color: $bg-3;
+                color: $light;
+                font-size: 12px;
+            }
+
+        }
+        .title h3{
+            font-weight: 800;
+            font-family: $fontHead;
+            color: $light;
+            font-size: $sizeH;
+        }
+        .info-location{
+            h5{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .info-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .info-bussines{
+            display: flex;
+            p{
+                flex-shrink: 0;
+                color: $light;
+                font-family: $fontHead;
+            }
+        }
+        .info-more{
+            display: flex;
+            justify-content: space-between;
+            span{
+                flex-shrink: 0;
+                color: $light;
+                font-family: $fontHead;
+            }
+            .code{
+                width: 29.461px;
+                height: 37.146px;
+                flex-shrink: 0;
+                padding-right: 2rem;
+                margin-left: 4rem;
+                background: url('/assets/image/code.png'), lightgray 50% / cover no-repeat;
+            }
+        }
+
+    }
+}

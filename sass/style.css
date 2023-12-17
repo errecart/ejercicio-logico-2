@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Encode+Sans:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:ital,wght@0,900;1,400;1,500&family=Rubik:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointsTS,
+.pointsS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+
+.header {
+  display: flex;
+  width: 1440px;
+  padding: 14px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  background: #FFF;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.header .header-title {
+  display: flex;
+  align-items: center;
+}
+.header .header-title h3 {
+  color: #0F1E7B;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+.header .header-title i {
+  display: none;
+}
+.header .header-account {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+}
+.header .header-account input {
+  width: 515px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  border: 1px solid #BABABA;
+  background: #FFF;
+}
+.header .header-account .acount {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.header .header-account .acount .user, .header .header-account .acount .header-options span, .header .header-options .header-account .acount span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .header-account .acount .user span, .header .header-account .acount .header-options span span, .header .header-options .header-account .acount span span {
+  color: #5E5E5E;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .header-container {
+  display: flex;
+  padding: 0px 70px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 229px;
+  align-self: stretch;
+}
+.header .header-options {
+  height: 19px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+}
+.header .header-options ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header .header-options ul li {
+  color: #5E5E5E;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header .header-options span {
+  color: #DC1E0F;
+}
+
+.primary {
+  width: 1442px;
+  height: 427px;
+  background: url("/assets/image/primary.png"), lightgray 50%/cover no-repeat;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.primary .pointsImp {
+  width: 111px;
+  height: 12px;
+  flex-shrink: 0;
+  position: relative;
+  top: 400px;
+  left: 630px;
+}
+
+.categories {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+.categories h3 {
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 400px;
+}
+.categories .categories-container {
+  width: 1300px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 316.216px 644.144px 316.216px;
+  grid-template-rows: 199.5px 199.5px;
+  gap: 5px 5px;
+  grid-template-areas: "itemA1 itemB1 itemA2" "itemA1 itemB2 itemA2";
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.categories .categories-container .categories-itemsA {
+  width: 316.216px;
+  height: 399px;
+  flex-shrink: 0;
+}
+.categories .categories-container .categories-itemsA h2 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+  position: relative;
+  top: 345px;
+  left: 22px;
+}
+.categories .categories-container .itemsA1 {
+  grid-area: itemA1;
+  background: url("/assets/image/zapatillas1.png");
+}
+.categories .categories-container .itemsA2 {
+  grid-area: itemA2;
+  background: url("/assets/image/pelotas.png");
+}
+.categories .categories-container .categories-itemsB {
+  width: 644.144px;
+  height: 193px;
+  flex-shrink: 0;
+}
+.categories .categories-container .categories-itemsB h2 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+  position: relative;
+  top: 145px;
+  left: 22px;
+}
+.categories .categories-container .itemsB1 {
+  grid-area: itemB1;
+  background: url("/assets/image/futbol.png");
+}
+.categories .categories-container .itemsB2 {
+  grid-area: itemB2;
+  background: url("/assets/image/calzas.png");
+}
+
+.tendency,
+.sells {
+  display: flex;
+  width: 1440px;
+  height: 566px;
+  padding: 0px 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.tendency h3,
+.sells h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.tendency .tendency-container,
+.tendency .sell-container,
+.sells .tendency-container,
+.sells .sell-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.tendency .tendency-container .card,
+.tendency .sell-container .card,
+.sells .tendency-container .card,
+.sells .sell-container .card {
+  width: 246px;
+  height: 402px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px #CCCACA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tendency .tendency-container .card .image,
+.tendency .sell-container .card .image,
+.sells .tendency-container .card .image,
+.sells .sell-container .card .image {
+  background: url("/assets/image/labaropa.png"), lightgray 50%/cover no-repeat;
+  width: 188px;
+  height: 188px;
+}
+.tendency .tendency-container .card p,
+.tendency .sell-container .card p,
+.sells .tendency-container .card p,
+.sells .sell-container .card p {
+  color: #5E5E5E;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+}
+.tendency .tendency-container .card h5,
+.tendency .sell-container .card h5,
+.sells .tendency-container .card h5,
+.sells .sell-container .card h5 {
+  color: rgba(0, 0, 0, 0.72);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.tendency .tendency-container .card button,
+.tendency .sell-container .card button,
+.sells .tendency-container .card button,
+.sells .sell-container .card button {
+  width: 117px;
+  height: 33px;
+  border-radius: 20px;
+  border: 1px solid #DC1E0F;
+  background: rgba(220, 30, 15, 0);
+  color: #DC1E0F;
+  text-align: center;
+  font-family: Encode Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.tendency .move,
+.sells .move {
+  display: flex;
+  width: 1390px;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  right: 45px;
+  bottom: 229px;
+}
+
+.tendency {
+  background-color: #DC1E0F;
+  margin-top: 3.5rem;
+}
+.tendency h3 {
+  color: #fff;
+}
+
+.send {
+  width: 1440px;
+  padding: 40px 150px;
+  background-color: #ECECEC;
+}
+.send .send-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.send .send-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 263px;
+  height: 171px;
+}
+.send .send-items .send-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.send .send-items .send-info h3 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.send .send-items .send-info p {
+  color: #3C3C3B;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.footer {
+  width: 1440px;
+  height: 290px;
+  flex-shrink: 0;
+  background-color: #000000;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
+}
+.footer .footer-container .info,
+.footer .footer-container .info-location {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+.footer .footer-container .info ul li,
+.footer .footer-container .info-location ul li {
+  padding-top: 10px;
+}
+.footer .footer-container .info button,
+.footer .footer-container .info-location button {
+  width: 194px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  margin: 1rem 0 1rem;
+  background-color: #000000;
+  color: #fff;
+  font-size: 12px;
+}
+.footer .footer-container .title h3 {
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 32px;
+}
+.footer .footer-container .info-location h5 {
+  margin-bottom: 1rem;
+}
+.footer .info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .info-section .info-bussines {
+  display: flex;
+}
+.footer .info-section .info-bussines p {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.footer .info-section .info-more {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .info-section .info-more span {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.footer .info-section .info-more .code {
+  width: 29.461px;
+  height: 37.146px;
+  flex-shrink: 0;
+  padding-right: 2rem;
+  margin-left: 4rem;
+  background: url("/assets/image/code.png"), lightgray 50%/cover no-repeat;
+}
+
+@media (max-width: 365px) {
+  .header {
+    width: 360px;
+    height: 95px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .header .header-container {
+    width: 360px;
+    height: 40px;
+    gap: 0px;
+    flex-shrink: 0;
+  }
+  .header .header-container .header-title i {
+    display: block;
+  }
+  .header .header-container .header-account {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .header .header-container .header-account .acount {
+    gap: 0px;
+  }
+  .header .header-container .header-account .acount img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .header .header-container .header-account .acount span {
+    display: none;
+  }
+  .header .header-container .header-account .header-input {
+    width: 360px;
+    height: 56px;
+    flex-shrink: 0;
+    display: none;
+  }
+  .header .header-container .header-account .header-input input {
+    width: 328px;
+    height: 40px;
+    flex-shrink: 0;
+    bottom: 5px;
+    position: relative;
+    right: 55px;
+  }
+  .header .header-options ul {
+    display: none;
+    flex-direction: column;
+  }
+  .primary {
+    width: 360px;
+    height: 140px;
+    flex-shrink: 0;
+    background: url("/assets/imageResponsive/primaryP.png"), lightgray 50%/cover no-repeat;
+  }
+  .primary .pointsImp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 10px;
+    flex-shrink: 0;
+    position: relative;
+    top: 125px;
+    left: 140px;
+  }
+  .tendency,
+  .sells {
+    display: flex;
+    width: 696px;
+    height: 360px;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    overflow: hidden;
+  }
+  .tendency .tendency-container,
+  .sells .tendency-container {
+    display: flex;
+    width: 342px;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .tendency .tendency-container .card,
+  .sells .tendency-container .card {
+    width: 160px;
+    height: 233px;
+    flex-shrink: 0;
+    border-radius: 15px;
+  }
+  .tendency .tendency-container .card .image,
+  .sells .tendency-container .card .image {
+    background: url("/assets/imageResponsive/labaropaR.png"), lightgray 50%/cover no-repeat;
+    width: 99.35px;
+    height: 99.547px;
+  }
+  .tendency .tendency-container .card p,
+  .sells .tendency-container .card p {
+    width: 112px;
+    height: 40px;
+  }
+  .tendency .tendency-container .card p,
+  .tendency .tendency-container .card h5,
+  .sells .tendency-container .card p,
+  .sells .tendency-container .card h5 {
+    font-size: 12px;
+  }
+  .tendency .tendency-container .card button,
+  .sells .tendency-container .card button {
+    width: 58px;
+    height: 16px;
+    font-size: 10px;
+  }
+  .tendency .move,
+  .sells .move {
+    display: none;
+  }
+  .categories {
+    gap: 14px;
+  }
+  .categories h3 {
+    width: 304.792px;
+    font-size: 24px;
+    padding: 0px 16px;
+    gap: 10px;
+    position: relative;
+    right: 560px;
+  }
+  .categories .categories-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+  }
+  .categories .categories-container .categories-itemsB {
+    width: 360px;
+    height: 208px;
+  }
+  .categories .categories-container .categories-itemsB h2 {
+    position: relative;
+    top: 75px;
+    left: 90px;
+  }
+  .categories .categories-container .itemsB1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("/assets/imageResponsive/futbolR.png"), lightgray 50%/cover no-repeat, #BF2A2F;
+  }
+  .categories .categories-container .itemsB2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("/assets/imageResponsive/calzasR.png"), lightgray 50%/cover no-repeat, #BF2A2F;
+  }
+  .categories .categories-container .categories-itemsA {
+    width: 360px;
+    height: 208px;
+  }
+  .categories .categories-container .categories-itemsA h2 {
+    position: relative;
+    top: 75px;
+    left: 50px;
+  }
+  .categories .categories-container .itemsA1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("/assets/imageResponsive/zapatillasR.png"), lightgray 50%/cover no-repeat, #BF2A2F;
+  }
+  .categories .categories-container .itemsA2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("/assets/imageResponsive/pelotasR.png"), lightgray 50%/cover no-repeat, #BF2A2F;
+  }
+  .send {
+    width: 360px;
+    padding: 40px 0px;
+    align-items: flex-start;
+    gap: 80px;
+  }
+  .send .send-items {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  .send .send-items .send-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+  .send .send-items .send-info h3 {
+    width: 261px;
+  }
+  .send .send-items .send-info p {
+    width: 263px;
+  }
+  .pointsCS,
+  .pointsTS,
+  .pointsS {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .pointsS {
+    position: relative;
+    left: 155px;
+    bottom: -20px;
+  }
+  .pointsTS {
+    position: relative;
+    bottom: 10px;
+    left: 110px;
+  }
+  .footer {
+    display: grid;
+    width: 360px;
+    text-align: center;
+    height: 681px;
+  }
+  .footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .footer .info-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .info-section .info-bussines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .info-section .info-more {
+    text-align: center;
+    width: 290px;
+    height: 123.791px;
+    flex-shrink: 0;
+  }
+  .footer .info-section .info-more .code {
+    width: 28.254px;
+    height: 41.048px;
+    flex-shrink: 0;
+    background: url("/assets/imageResponsive/codeR.png"), lightgray 50%/cover no-repeat;
+  }
+}/*# sourceMappingURL=style.css.map */

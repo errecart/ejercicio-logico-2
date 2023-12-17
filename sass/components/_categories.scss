@@ -1,0 +1,74 @@
+.categories{
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    h3{
+        font-style: italic;
+        font-weight: 800;
+        line-height: 32px;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        right: 400px;
+    }
+    .categories-container{
+        width: 1300px;
+        flex-shrink: 0;
+        display: grid; 
+        grid-template-columns: 316.216px 644.144px 316.216px; 
+        grid-template-rows: 199.5px 199.5px; 
+        gap: 5px 5px; 
+        grid-template-areas: 
+            "itemA1 itemB1 itemA2"
+            "itemA1 itemB2 itemA2";
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        .categories-itemsA {
+            width: 316.216px;
+            height: 399px;
+            flex-shrink: 0;
+            h2{
+                color: $light;
+                font-family: $fontFISC;
+                font-size: $sizeCH;
+                position: relative;
+                top: 345px;
+                left:22px;
+            }
+        }
+        .itemsA1{
+            grid-area: itemA1;
+            background: url('/assets/image/zapatillas1.png');
+        }
+        .itemsA2{
+            grid-area: itemA2;
+            background: url('/assets/image/pelotas.png');
+        }
+        .categories-itemsB{
+            width: 644.144px;
+            height: 193px;
+            flex-shrink: 0;
+            h2{
+                color: $light;
+                font-family: $fontFISC;
+                font-size: $sizeCH;
+                position: relative;
+                top: 145px;
+                left:22px;
+            }
+        }
+        .itemsB1{
+            grid-area: itemB1;
+            background: url('/assets/image/futbol.png');
+        }
+        .itemsB2{
+            grid-area: itemB2;
+            background: url('/assets/image/calzas.png');
+        }
+    }
+    
+}

@@ -1,0 +1,15 @@
+.primary{
+    width: 1442px;
+    height: 427px;
+
+    background: url('/assets/image/primary.png'), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.10);
+    .pointsImp{
+        width: 111px;
+        height: 12px;
+        flex-shrink: 0;
+        position: relative;
+        top: 400px;
+        left: 630px;
+    }
+}

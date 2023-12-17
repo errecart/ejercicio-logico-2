@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: $sizeCH;
+}
+
+h3{
+    font-size: $sizeH;
+    font-family: $fontHead;
+}
+h5{
+    font-size: $sizeSH;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pointsTS,
+.pointsS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+
+
+
